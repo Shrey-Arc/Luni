@@ -4,7 +4,7 @@ import { globalRateLimit, checkinRateLimit } from './middleware/rateLimit';
 import { authMiddleware } from './middleware/auth';
 
 // Import routes (these will be created in later phases)
-// import petsRoutes from './routes/pets';
+import petsRoutes from './routes/pets';
 // import achievementsRoutes from './routes/achievements';
 // import settingsRoutes from './routes/settings';
 // import exportRoutes from './routes/export';
@@ -36,7 +36,7 @@ app.use('/api/*', authMiddleware);
 app.use('/api/pets/*/checkin', checkinRateLimit);
 
 // Mount routes (will be uncommented in later phases)
-// app.route('/api/pets', petsRoutes);
+app.route('/api/pets', petsRoutes);
 // app.route('/api/achievements', achievementsRoutes);
 // app.route('/api/settings', settingsRoutes);
 // app.route('/api/export', exportRoutes);
