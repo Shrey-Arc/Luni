@@ -1,0 +1,9 @@
+name = "luni-backend"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+[vars]
+# Add these to your .dev.vars for local development
+# SUPABASE_URL = ""
+# SUPABASE_ANON_KEY = ""
+# SUPABASE_SERVICE_ROLE_KEY = ""
